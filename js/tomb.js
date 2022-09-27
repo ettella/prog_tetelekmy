@@ -30,4 +30,19 @@ function maxKivalasztas(){
 
 
 
+
+function kivalasztas(szam){
+    let index = -1;
+
+    for(let i = 0; i < tomb.length && index == -1; i++)
+    {
+        if(tomb[i] == szam)
+        index = i;
+    }
+    document.getElementById("index").innerHTML = index;
+}
+
+
+
+
 //házi: átlagoláselemek átlaga a tömbben
