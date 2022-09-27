@@ -1,4 +1,4 @@
-var tomb = [99, 18, 25, 3, 8, 110, 37, 26, 112];
+var tomb = [99, 18, 25, 3, 8, 110, 37, -2, 112];
 
 function tombKiir(){
     let span = document.getElementById("tomb-elemei");
@@ -41,6 +41,44 @@ function kivalasztas(szam){
     }
     document.getElementById("index").innerHTML = index;
 }
+
+
+function megSzamol(){
+    let db = 0;
+
+    for(let i = 0; i < tomb.length; i++)
+    {
+        if(tomb[i] >= 70 )
+         db++;
+    }
+    document.getElementById("db").innerHTML = db;
+}
+
+
+function eldontes(){
+    let van = false;
+
+    for(let i = 0; i < tomb.length && !van; i++)
+    {
+        if(tomb[i] < 0 )
+         van = true;
+    }
+    document.getElementById("dont").innerHTML = van?"Van ilyen elem":"Nincs ilyen elem";
+}
+
+
+function kivalogatas(){
+    let paros = [];
+
+    for(let i = 0; i < tomb.length; i++)
+    {
+        if(tomb[i] % 2 == 0 )
+         paros.push(tomb[i]);
+    }
+    document.getElementById("paros").innerHTML = paros;
+}
+
+//alap alg - rendezés:
 
 
 
