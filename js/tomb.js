@@ -78,9 +78,14 @@ function kivalogatas(){
     document.getElementById("paros").innerHTML = paros;
 }
 
+
 //alap alg - rendezés:
 
+function atlagolas(){
+    let atlag = tomb.reduce((a, b) => a + b) / tomb.length;
 
+    document.getElementById("atlagolt").innerHTML = atlag;
+}
 
 
 //házi: átlagoláselemek átlaga a tömbben
