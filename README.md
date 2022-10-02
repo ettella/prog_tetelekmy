@@ -10,3 +10,5 @@ rendezés,
 kiválogatás,
 eldöntés
 megszámlálás
+
+Házi:
