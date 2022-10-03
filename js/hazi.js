@@ -52,15 +52,14 @@ function legrovidebbNev(){
 
 
 function valasztas(){
-    // let db = 0;
+   let db = 0;
 
-    // for(let i = 0; i < tomb.length; i++)
-    // {
-    //     if(nevek[i] === "A")
-    //      db++;
-    // }
-    // document.getElementById("valasztott").innerHTML = db;
-
+    for(let i = 0; i < tomb.length; i++)
+    {
+        if(nevek[i].includes("A") || nevek[i].includes("E") )
+         db++;
+    }
+    document.getElementById("valasztott").innerHTML = db;
 
 }
 
